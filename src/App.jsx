@@ -7,7 +7,7 @@ const App = () => {
   const [totalStrength, setTotalStrength] = useState(0)
   const [totalAgility, setTotalAgility] = useState(0)
 
-  const zombieFighters = [
+  const [zombieFighters, setZombieFighters] = useState([
     {
       name: 'Survivor',
       price: 12,
@@ -78,7 +78,7 @@ const App = () => {
       agility: 6,
       img: 'https://via.placeholder.com/150/602b9e'
     }
-  ]
+  ])
 
   const handleAddFighter = (fighter) => {
     if (money < fighter.price) {
